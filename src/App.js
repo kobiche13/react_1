@@ -1,9 +1,34 @@
-import logo from './logo.svg';
+import itemBlue from './item-blue.jpg';
+import itemBlack from './item-black.jpg';
 import './App.css';
+
+const item = {
+  brand: 'Tiger of Sweden',
+  title: 'Leonard coat',
+  description: 'Minimalistic coat in cotton-blend',
+  descriptionFull: 'Men\'s minimalistic overcoat in cotton-blend. Features a stand-up collar, concealed front closure and single back vent. Slim fit with clean, straight shape. Above-knee length.',
+  price: 399,
+  currency: '£'
+}
+
+function ShopItemFunc(props){
+  
+}
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+    <div className="background-element">
+    </div>
+    <div className="highlight-window">
+      <div className='highlight-overlay'></div>
+    </div>
+    <div className="window">
+      <ShopItemFunc item={item} />
+    </div>
+  </div>
+    
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +43,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
+
   );
 }
 
