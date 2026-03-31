@@ -1,8 +1,4 @@
-import itemBlue from './img/item-blue.jpg';
-import itemBlack from './img/item-black.jpg';
-import './App.css';
-
-const item = {
+export const item = {
   brand: 'Tiger of Sweden',
   title: 'Leonard coat',
   description: 'Minimalistic coat in cotton-blend',
@@ -11,7 +7,7 @@ const item = {
   currency: '£'
 }
 
-function ShopItemFunc(props){
+export default function ShopItemFunc(props){
   
   return(
     <div className="main-content">
@@ -30,20 +26,3 @@ function ShopItemFunc(props){
     </div>
   );
 }
-
-function App() {
-  return (
-    <div className="container">
-    <div className="background-element">
-    </div>
-    <div className="highlight-window">
-      <div className='highlight-overlay'></div>
-    </div>
-    <div className="window">
-      <ShopItemFunc item={item} />
-    </div>
-  </div>
-  );
-}
-
-export default App;
